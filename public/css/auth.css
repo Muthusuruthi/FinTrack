@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+
+    background:
+        radial-gradient(circle at 20% 20%, rgba(124,58,237,.35), transparent 30%),
+        radial-gradient(circle at 80% 80%, rgba(37,99,235,.25), transparent 30%),
+        #080b18;
+
+    min-height: 100vh;
+}
+
+.auth-container {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 440px;
+
+    padding: 40px;
+
+    background: rgba(255,255,255,.08);
+
+    border: 1px solid rgba(255,255,255,.12);
+
+    border-radius: 25px;
+
+    backdrop-filter: blur(20px);
+
+    box-shadow: 0 30px 80px rgba(0,0,0,.35);
+
+    color: white;
+}
+
+.logo {
+    text-align: center;
+
+    font-size: 25px;
+    font-weight: 800;
+
+    margin-bottom: 30px;
+}
+
+.logo i {
+    color: #8b5cf6;
+}
+
+.auth-card h2 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #a7aec5;
+    margin-bottom: 30px;
+}
+
+.input-group-custom {
+    display: flex;
+    align-items: center;
+
+    background: rgba(255,255,255,.06);
+
+    border: 1px solid rgba(255,255,255,.1);
+
+    border-radius: 12px;
+
+    padding: 0 15px;
+
+    margin-bottom: 16px;
+}
+
+.input-group-custom i {
+    color: #8b5cf6;
+}
+
+.input-group-custom input {
+    width: 100%;
+
+    background: transparent;
+    border: none;
+    outline: none;
+
+    padding: 15px;
+
+    color: white;
+}
+
+.input-group-custom input::placeholder {
+    color: #858ca5;
+}
+
+.auth-btn {
+    width: 100%;
+
+    border: none;
+    border-radius: 12px;
+
+    padding: 14px;
+
+    color: white;
+
+    font-weight: 600;
+
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #2563eb
+    );
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.auth-btn:hover {
+    transform: translateY(-2px);
+}
+
+.bottom-text {
+    text-align: center;
+    color: #a7aec5;
+
+    margin-top: 25px;
+}
+
+.bottom-text a {
+    color: #a78bfa;
+    text-decoration: none;
+}
